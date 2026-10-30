@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Meus pedidos · Gustavo — Especialista Apple</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">    <link rel="stylesheet" href="/build/assets/app-C2gm0EJK.css">
+<script type="module" src="/build/assets/app-D2CPdcj_.js"></script>
+<script src="/static.js" defer></script>
+</head>
+    <body class="bg-paper font-sans leading-normal text-ink antialiased" data-whatsapp="00000000000" x-data>
+        <div class="bg-brand px-4 py-2 text-center text-[13px] font-semibold leading-snug text-ink">
+            Protótipo · produtos, preços, estoque e contatos são demonstrativos
+        </div>
+
+        <header class="sticky top-0 z-30 border-b border-ink-500 bg-ink text-snow" x-data="{ menu: false }">
+            <div class="wrap flex flex-wrap items-center gap-x-6 gap-y-3 py-3">
+                <a href="/" aria-label="Gustavo, página inicial">
+                    <span class="flex items-center gap-[11px]">
+    <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
+        <circle cx="17" cy="17" r="17" fill="#B8FF65"/>
+        <text x="17" y="24" text-anchor="middle" font-family="Bricolage Grotesque, Instrument Sans, sans-serif" font-weight="800" font-size="21" fill="#0B110D">G</text>
+    </svg>
+    <span class="flex flex-col leading-[1.05]">
+        <span class="font-display text-[25px] font-bold">Gustavo</span>
+                    <span class="text-[11px] uppercase tracking-[.14em] text-fog">Especialista Apple</span>
+            </span>
+</span>
+                </a>
+
+                <nav class="ml-2 hidden gap-0.5 lg:flex" aria-label="Principal">
+                                            <a href="/"                            class="relative rounded-full px-3.5 py-2.5 text-[15px] font-medium transition hover:bg-ink-700 text-snow">
+                            Início
+                            <span class="absolute inset-x-3.5 bottom-0.5 h-0.5 bg-transparent"></span>
+                        </a>
+                                            <a href="/catalogo"                            class="relative rounded-full px-3.5 py-2.5 text-[15px] font-medium transition hover:bg-ink-700 text-snow">
+                            Catálogo
+                            <span class="absolute inset-x-3.5 bottom-0.5 h-0.5 bg-transparent"></span>
+                        </a>
+                                            <a href="/sobre"                            class="relative rounded-full px-3.5 py-2.5 text-[15px] font-medium transition hover:bg-ink-700 text-snow">
+                            Sobre nós
+                            <span class="absolute inset-x-3.5 bottom-0.5 h-0.5 bg-transparent"></span>
+                        </a>
+                                            <a href="/contato"                            class="relative rounded-full px-3.5 py-2.5 text-[15px] font-medium transition hover:bg-ink-700 text-snow">
+                            Contato
+                            <span class="absolute inset-x-3.5 bottom-0.5 h-0.5 bg-transparent"></span>
+                        </a>
+                                    </nav>
+
+                <form action="/catalogo" method="GET" role="search"
+                      class="relative order-3 basis-full lg:order-none lg:ml-auto lg:max-w-[340px] lg:flex-1 lg:basis-[150px]"
+                      x-data="busca(JSON.parse('[{\u0022nome\u0022:\u0022iPhone 18 Pro\u0022,\u0022categoria\u0022:\u0022iPhone\u0022,\u0022url\u0022:\u0022\\\/produto\\\/iphone-18-pro\u0022},{\u0022nome\u0022:\u0022iPhone 17 Pro\u0022,\u0022categoria\u0022:\u0022iPhone\u0022,\u0022url\u0022:\u0022\\\/produto\\\/iphone-17-pro\u0022},{\u0022nome\u0022:\u0022iPhone 17\u0022,\u0022categoria\u0022:\u0022iPhone\u0022,\u0022url\u0022:\u0022\\\/produto\\\/iphone-17\u0022},{\u0022nome\u0022:\u0022iPhone 16\u0022,\u0022categoria\u0022:\u0022iPhone\u0022,\u0022url\u0022:\u0022\\\/produto\\\/iphone-16\u0022},{\u0022nome\u0022:\u0022iPhone 15\u0022,\u0022categoria\u0022:\u0022iPhone\u0022,\u0022url\u0022:\u0022\\\/produto\\\/iphone-15\u0022},{\u0022nome\u0022:\u0022iPhone 14\u0022,\u0022categoria\u0022:\u0022iPhone\u0022,\u0022url\u0022:\u0022\\\/produto\\\/iphone-14\u0022},{\u0022nome\u0022:\u0022iPhone 13\u0022,\u0022categoria\u0022:\u0022iPhone\u0022,\u0022url\u0022:\u0022\\\/produto\\\/iphone-13\u0022},{\u0022nome\u0022:\u0022MacBook Air 13\\u0022 M3\u0022,\u0022categoria\u0022:\u0022MacBook\u0022,\u0022url\u0022:\u0022\\\/produto\\\/macbook-air-13-m3\u0022},{\u0022nome\u0022:\u0022MacBook Pro 14\\u0022 M4\u0022,\u0022categoria\u0022:\u0022MacBook\u0022,\u0022url\u0022:\u0022\\\/produto\\\/macbook-pro-14-m4\u0022},{\u0022nome\u0022:\u0022MacBook Air 13\\u0022 M1\u0022,\u0022categoria\u0022:\u0022MacBook\u0022,\u0022url\u0022:\u0022\\\/produto\\\/macbook-air-13-m1\u0022},{\u0022nome\u0022:\u0022iPad Air 11\\u0022\u0022,\u0022categoria\u0022:\u0022iPad\u0022,\u0022url\u0022:\u0022\\\/produto\\\/ipad-air-11\u0022},{\u0022nome\u0022:\u0022iPad Pro 11\\u0022 M4\u0022,\u0022categoria\u0022:\u0022iPad\u0022,\u0022url\u0022:\u0022\\\/produto\\\/ipad-pro-11-m4\u0022},{\u0022nome\u0022:\u0022iPad 10ª geração\u0022,\u0022categoria\u0022:\u0022iPad\u0022,\u0022url\u0022:\u0022\\\/produto\\\/ipad-10-geracao\u0022},{\u0022nome\u0022:\u0022iPad 9ª geração\u0022,\u0022categoria\u0022:\u0022iPad\u0022,\u0022url\u0022:\u0022\\\/produto\\\/ipad-9-geracao\u0022},{\u0022nome\u0022:\u0022Apple Watch Series 10\u0022,\u0022categoria\u0022:\u0022Apple Watch\u0022,\u0022url\u0022:\u0022\\\/produto\\\/apple-watch-series-10\u0022},{\u0022nome\u0022:\u0022Apple Watch Ultra 2\u0022,\u0022categoria\u0022:\u0022Apple Watch\u0022,\u0022url\u0022:\u0022\\\/produto\\\/apple-watch-ultra-2\u0022},{\u0022nome\u0022:\u0022Apple Watch SE\u0022,\u0022categoria\u0022:\u0022Apple Watch\u0022,\u0022url\u0022:\u0022\\\/produto\\\/apple-watch-se\u0022},{\u0022nome\u0022:\u0022AirPods Pro 2\u0022,\u0022categoria\u0022:\u0022AirPods\u0022,\u0022url\u0022:\u0022\\\/produto\\\/airpods-pro-2\u0022},{\u0022nome\u0022:\u0022AirPods 4\u0022,\u0022categoria\u0022:\u0022AirPods\u0022,\u0022url\u0022:\u0022\\\/produto\\\/airpods-4\u0022},{\u0022nome\u0022:\u0022AirPods Max\u0022,\u0022categoria\u0022:\u0022AirPods\u0022,\u0022url\u0022:\u0022\\\/produto\\\/airpods-max\u0022},{\u0022nome\u0022:\u0022Carregador MagSafe\u0022,\u0022categoria\u0022:\u0022Acessórios\u0022,\u0022url\u0022:\u0022\\\/produto\\\/carregador-magsafe\u0022},{\u0022nome\u0022:\u0022Cabo USB-C 2 m\u0022,\u0022categoria\u0022:\u0022Acessórios\u0022,\u0022url\u0022:\u0022\\\/produto\\\/cabo-usb-c-2m\u0022},{\u0022nome\u0022:\u0022AirTag\u0022,\u0022categoria\u0022:\u0022Acessórios\u0022,\u0022url\u0022:\u0022\\\/produto\\\/airtag\u0022}]'), '')" @click.outside="aberto = false">
+                    <label for="busca" class="sr-only">Pesquisar produtos</label>
+                    <svg class="absolute left-4 top-3.5 text-fog" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+                    <input id="busca" name="q" type="search" autocomplete="off" placeholder="Buscar iPhone, MacBook, AirPods…"
+                           x-model="termo" @input="aberto = true" @keydown.escape="aberto = false"
+                           class="h-[46px] w-full rounded-full border border-ink-400 bg-ink-700 pl-11 pr-[18px] text-[15px] text-snow placeholder:text-fog focus:border-ink-200 focus:ring-0">
+
+                    <div x-show="aberto && termo.trim()" x-cloak class="absolute inset-x-0 top-[52px] z-40 rounded-card border border-ink-300 bg-ink-700 py-1.5">
+                        <template x-for="produto in resultados" :key="produto.url">
+                            <a :href="produto.url" class="flex min-h-[46px] w-full items-center justify-between gap-3 px-4 text-[15px] text-snow hover:bg-ink-600">
+                                <span x-text="produto.nome"></span>
+                                <span class="text-[13px] text-fog" x-text="produto.categoria"></span>
+                            </a>
+                        </template>
+                        <template x-if="resultados.length">
+                            <button type="submit" class="flex min-h-[46px] w-full items-center px-4 text-[15px] font-semibold text-brand hover:bg-ink-600">Ver todos os resultados</button>
+                        </template>
+                        <template x-if="!resultados.length">
+                            <p class="px-4 py-3.5 text-sm text-fog">Nada encontrado. Pergunte a um vendedor.</p>
+                        </template>
+                    </div>
+                </form>
+
+                <div class="ml-auto lg:ml-0">
+                    <button type="button" class="btn btn-lime min-h-[46px] px-4 text-[15px] md:px-5"
+                            @click="$store.whatsapp.abrir('Olá! Gostaria de falar com um vendedor sobre produtos Apple.')">
+                        <svg  width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path fill="currentColor" stroke="none" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                        <span class="hidden md:inline">Falar com vendedor</span>
+                        <span class="sr-only md:hidden">Falar com vendedor pelo WhatsApp</span>
+                    </button>
+                </div>
+
+                <div class="hidden items-center gap-2 md:flex">
+                                            
+                        <div class="relative" x-data="{ aberto: false }"
+                             @mouseenter="aberto = true" @mouseleave="aberto = false"
+                             @click.outside="aberto = false" @keydown.escape="aberto = false; $refs.botao.focus()">
+                            <button type="button" x-ref="botao" @click="aberto = ! aberto" :aria-expanded="aberto" aria-haspopup="true"
+                                    aria-label="Menu da conta de Joao Silva"
+                                    class="flex min-h-[46px] items-center gap-2.5 rounded-full border border-ink-200 py-0 pl-1.5 pr-3 text-[15px] font-semibold transition hover:border-brand"
+                                    :class="aberto && 'border-brand'">
+                                <span class="grid size-[34px] place-items-center rounded-full bg-brand font-display font-extrabold text-ink">J</span>
+                                <span>Joao</span>
+                                <svg class="transition" :class="aberto && 'rotate-180'" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+                            </button>
+
+                            
+                            <div x-show="aberto" x-cloak x-transition.origin.top.right class="absolute right-0 top-full z-40 w-[250px] pt-2">
+                                <div class="overflow-hidden rounded-card border border-ink-300 bg-ink-700 shadow-[0_18px_40px_rgba(0,0,0,.35)]">
+                                    <div class="border-b border-ink-400 px-4 py-3">
+                                        <p class="font-semibold">Joao Silva</p>
+                                        <p class="truncate text-[13px] text-fog">joao.silva@exemplo.com</p>
+                                    </div>
+                                    <nav aria-label="Conta" class="py-1.5">
+                                                                                    <a href="/conta" class="flex min-h-[44px] items-center px-4 text-[15px] text-snow transition hover:bg-ink-600 hover:text-brand">Minha conta</a>
+                                                                                    <a href="/conta/pedidos" class="flex min-h-[44px] items-center px-4 text-[15px] text-snow transition hover:bg-ink-600 hover:text-brand">Meus pedidos</a>
+                                                                                    <a href="/conta/pedidos/por-data" class="flex min-h-[44px] items-center px-4 text-[15px] text-snow transition hover:bg-ink-600 hover:text-brand">Pedidos por data</a>
+                                                                                    <a href="/conta/perfil" class="flex min-h-[44px] items-center px-4 text-[15px] text-snow transition hover:bg-ink-600 hover:text-brand">Meu perfil</a>
+                                                                            </nav>
+                                    <form action="/sair" method="POST" class="border-t border-ink-400 py-1.5" data-demo data-go="/">                                        <button type="submit" class="flex min-h-[44px] w-full items-center gap-2.5 px-4 text-[15px] text-snow transition hover:bg-ink-600 hover:text-brand">
+                                            <svg  width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4H5v16h4M16 8l4 4-4 4M20 12H9"/></svg>
+ Sair
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                                    </div>
+
+                <button type="button" class="inline-flex size-[46px] items-center justify-center rounded-full border border-ink-400 lg:hidden"
+                        @click="menu = ! menu" :aria-expanded="menu" aria-label="Abrir menu">
+                    <svg x-show="! menu" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+                    <svg x-show="menu" x-cloak="x-cloak" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+                </button>
+            </div>
+
+            <nav x-show="menu" x-cloak class="wrap flex animate-rise flex-col pb-4 lg:hidden" aria-label="Menu">
+                                    <a href="/" class="flex min-h-[52px] items-center justify-between border-t border-ink-500 text-xl font-semibold ">
+                        Início
+                        <svg  width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </a>
+                                    <a href="/catalogo" class="flex min-h-[52px] items-center justify-between border-t border-ink-500 text-xl font-semibold ">
+                        Catálogo
+                        <svg  width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </a>
+                                    <a href="/sobre" class="flex min-h-[52px] items-center justify-between border-t border-ink-500 text-xl font-semibold ">
+                        Sobre nós
+                        <svg  width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </a>
+                                    <a href="/contato" class="flex min-h-[52px] items-center justify-between border-t border-ink-500 text-xl font-semibold ">
+                        Contato
+                        <svg  width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </a>
+                                                    <p class="border-t border-ink-500 pb-1 pt-4 text-[13px] uppercase tracking-[.12em] text-fog">Olá, Joao</p>
+                                            <a href="/conta" class="flex min-h-[48px] items-center text-lg font-semibold text-brand">Minha conta</a>
+                                            <a href="/conta/pedidos" class="flex min-h-[48px] items-center text-lg font-semibold text-brand">Meus pedidos</a>
+                                            <a href="/conta/pedidos/por-data" class="flex min-h-[48px] items-center text-lg font-semibold text-brand">Pedidos por data</a>
+                                            <a href="/conta/perfil" class="flex min-h-[48px] items-center text-lg font-semibold text-brand">Meu perfil</a>
+                                        <form action="/sair" method="POST" data-demo data-go="/">                        <button type="submit" class="flex min-h-[52px] w-full items-center border-t border-ink-500 text-xl font-semibold">Sair</button>
+                    </form>
+                            </nav>
+
+            <div class="border-t border-ink-500 bg-ink-700">
+                <nav class="wrap no-scrollbar flex gap-1 overflow-x-auto" aria-label="Categorias">
+                                                                    <a href="/catalogo--categoria-iphone"
+                           class="flex-none whitespace-nowrap px-3.5 py-2.5 text-sm font-medium transition hover:text-snow text-fog">
+                            iPhone
+                        </a>
+                                                                    <a href="/catalogo--categoria-macbook"
+                           class="flex-none whitespace-nowrap px-3.5 py-2.5 text-sm font-medium transition hover:text-snow text-fog">
+                            MacBook
+                        </a>
+                                                                    <a href="/catalogo--categoria-ipad"
+                           class="flex-none whitespace-nowrap px-3.5 py-2.5 text-sm font-medium transition hover:text-snow text-fog">
+                            iPad
+                        </a>
+                                                                    <a href="/catalogo--categoria-apple-watch"
+                           class="flex-none whitespace-nowrap px-3.5 py-2.5 text-sm font-medium transition hover:text-snow text-fog">
+                            Apple Watch
+                        </a>
+                                                                    <a href="/catalogo--categoria-airpods"
+                           class="flex-none whitespace-nowrap px-3.5 py-2.5 text-sm font-medium transition hover:text-snow text-fog">
+                            AirPods
+                        </a>
+                                                                    <a href="/catalogo--categoria-acessorios"
+                           class="flex-none whitespace-nowrap px-3.5 py-2.5 text-sm font-medium transition hover:text-snow text-fog">
+                            Acessórios
+                        </a>
+                                    </nav>
+            </div>
+        </header>
+
+        <main>
+            
+            <section class="wrap pb-14 pt-8 md:pb-[88px] md:pt-16">
+    <div class="flex flex-wrap items-end justify-between gap-4">
+        <div>
+            <p class="eyebrow text-moss">Minha conta</p>
+            <h1 class="mt-3 font-display text-[clamp(34px,4.6vw,64px)] font-extrabold leading-none">Meus pedidos</h1>
+                            <p class="mt-3 max-w-[560px] text-[15px] text-muted md:text-base">Os pedidos que o vendedor registrou para você depois da conversa no WhatsApp. Exemplos fictícios.</p>
+                    </div>
+        <form method="POST" action="/sair" class="hidden md:block" data-demo data-go="/">            <button type="submit" class="btn btn-line">Sair da conta</button>
+        </form>
+    </div>
+
+    <nav aria-label="Minha conta" class="no-scrollbar -mx-4 mt-6 flex gap-2 overflow-x-auto px-4 md:mx-0 md:mt-8 md:px-0">
+                    <a href="/conta" class="chip flex-none " >Resumo</a>
+                    <a href="/conta/pedidos" class="chip flex-none chip-on"  aria-current="page" >Meus pedidos</a>
+                    <a href="/conta/pedidos/por-data" class="chip flex-none " >Pedidos por data</a>
+                    <a href="/conta/perfil" class="chip flex-none " >Meu perfil</a>
+            </nav>
+
+    <div class="mt-6 md:mt-8">
+        <div role="group" aria-label="Filtrar pedidos" class="no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4 md:mx-0 md:px-0">
+            <a href="/conta/pedidos" class="chip flex-none text-sm ">Todos <b>9</b></a>
+                            <a href="/conta/pedidos--situacao-andamento" class="chip flex-none text-sm ">
+                    Em andamento <b>4</b>
+                </a>
+                            <a href="/conta/pedidos--situacao-concluidos" class="chip flex-none text-sm chip-on">
+                    Concluídos <b>4</b>
+                </a>
+                            <a href="/conta/pedidos--situacao-cancelados" class="chip flex-none text-sm ">
+                    Cancelados <b>1</b>
+                </a>
+                    </div>
+
+        <div class="mt-4 flex flex-col gap-2.5">
+                            <a href="/conta/pedidos/2002"
+   class="group flex flex-col gap-3 rounded-card border border-line bg-white p-4 transition hover:border-ink md:grid md:grid-cols-[80px_minmax(0,1fr)_auto_auto] md:items-center md:gap-5 md:px-5">
+    <div class="flex items-center justify-between gap-3 md:contents">
+        <b class="text-[15px]">#2002</b>
+        <span class="badge md:order-3" style="background: #0B110D; color: #B8FF65">
+        Concluído
+</span>
+    </div>
+    <div class="md:order-2 md:min-w-0">
+        <p class="font-semibold leading-snug">iPad Air 11&quot; · 128 GB · Azul</p>
+        <p class="mt-0.5 text-[13.5px] text-muted">
+            15/10/2026 · R$ 5.290
+        </p>
+    </div>
+    <span class="inline-flex items-center gap-1.5 text-sm font-semibold md:order-4">
+        Ver pedido <svg class="transition group-hover:translate-x-0.5" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </span>
+</a>
+                            <a href="/conta/pedidos/1999"
+   class="group flex flex-col gap-3 rounded-card border border-line bg-white p-4 transition hover:border-ink md:grid md:grid-cols-[80px_minmax(0,1fr)_auto_auto] md:items-center md:gap-5 md:px-5">
+    <div class="flex items-center justify-between gap-3 md:contents">
+        <b class="text-[15px]">#1999</b>
+        <span class="badge md:order-3" style="background: #0B110D; color: #B8FF65">
+        Concluído
+</span>
+    </div>
+    <div class="md:order-2 md:min-w-0">
+        <p class="font-semibold leading-snug">Cabo USB-C 2 m</p>
+        <p class="mt-0.5 text-[13.5px] text-muted">
+            19/09/2026 · R$ 149
+        </p>
+    </div>
+    <span class="inline-flex items-center gap-1.5 text-sm font-semibold md:order-4">
+        Ver pedido <svg class="transition group-hover:translate-x-0.5" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </span>
+</a>
+                            <a href="/conta/pedidos/1998"
+   class="group flex flex-col gap-3 rounded-card border border-line bg-white p-4 transition hover:border-ink md:grid md:grid-cols-[80px_minmax(0,1fr)_auto_auto] md:items-center md:gap-5 md:px-5">
+    <div class="flex items-center justify-between gap-3 md:contents">
+        <b class="text-[15px]">#1998</b>
+        <span class="badge md:order-3" style="background: #0B110D; color: #B8FF65">
+        Concluído
+</span>
+    </div>
+    <div class="md:order-2 md:min-w-0">
+        <p class="font-semibold leading-snug">AirTag · 4 unidades</p>
+        <p class="mt-0.5 text-[13.5px] text-muted">
+            19/09/2026 · R$ 999
+        </p>
+    </div>
+    <span class="inline-flex items-center gap-1.5 text-sm font-semibold md:order-4">
+        Ver pedido <svg class="transition group-hover:translate-x-0.5" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </span>
+</a>
+                            <a href="/conta/pedidos/1990"
+   class="group flex flex-col gap-3 rounded-card border border-line bg-white p-4 transition hover:border-ink md:grid md:grid-cols-[80px_minmax(0,1fr)_auto_auto] md:items-center md:gap-5 md:px-5">
+    <div class="flex items-center justify-between gap-3 md:contents">
+        <b class="text-[15px]">#1990</b>
+        <span class="badge md:order-3" style="background: #0B110D; color: #B8FF65">
+        Concluído
+</span>
+    </div>
+    <div class="md:order-2 md:min-w-0">
+        <p class="font-semibold leading-snug">MacBook Air 13&quot; M1 · 8 GB · 256 GB (seminovo)</p>
+        <p class="mt-0.5 text-[13.5px] text-muted">
+            29/08/2026 · R$ 4.290
+        </p>
+    </div>
+    <span class="inline-flex items-center gap-1.5 text-sm font-semibold md:order-4">
+        Ver pedido <svg class="transition group-hover:translate-x-0.5" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </span>
+</a>
+                    </div>
+
+        <a href="/conta/pedidos/por-data" class="mt-6 inline-flex min-h-[44px] items-center gap-2 font-semibold">
+            Ver pedidos por data <svg  width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+    </div>
+
+    <form method="POST" action="/sair" class="mt-10 md:hidden" data-demo data-go="/">        <button type="submit" class="btn btn-line w-full">Sair da conta</button>
+    </form>
+</section>
+        </main>
+
+        <footer class="bg-ink text-snow">
+            <div class="wrap pb-8 pt-[72px]">
+                <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)_minmax(0,1.1fr)_minmax(0,1fr)]">
+                    <div>
+                        <span class="flex items-center gap-[11px]">
+    <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
+        <circle cx="17" cy="17" r="17" fill="#B8FF65"/>
+        <text x="17" y="24" text-anchor="middle" font-family="Bricolage Grotesque, Instrument Sans, sans-serif" font-weight="800" font-size="21" fill="#0B110D">G</text>
+    </svg>
+    <span class="flex flex-col leading-[1.05]">
+        <span class="font-display text-[25px] font-bold">Gustavo</span>
+                    <span class="text-[11px] uppercase tracking-[.14em] text-fog">Especialista Apple</span>
+            </span>
+</span>
+                        <p class="mt-4 max-w-[300px] text-fog">Especialista Apple com atendimento direto. [Logotipo provisório]</p>
+                        <div class="mt-5 flex gap-2.5">
+                            <button type="button" aria-label="Falar pelo WhatsApp"
+                                    @click="$store.whatsapp.abrir('Olá! Gostaria de falar com um vendedor sobre produtos Apple.')"
+                                    class="grid size-11 place-items-center rounded-full bg-brand text-ink transition hover:bg-brand-soft">
+                                <svg  width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path fill="currentColor" stroke="none" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                            </button>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram da loja"
+                               class="grid size-11 place-items-center rounded-full border border-ink-200 transition hover:border-brand hover:text-brand">
+                                <svg  width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg>
+                            </a>
+                            <a href="/contato" aria-label="Enviar e-mail"
+                               class="grid size-11 place-items-center rounded-full border border-ink-200 transition hover:border-brand hover:text-brand">
+                                <svg  width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="text-[13px] uppercase tracking-[.12em] text-fog">Fale com a gente</p>
+                        <ul class="mt-3.5 flex flex-col gap-1">
+                            <li>
+                                <button type="button" @click="$store.whatsapp.abrir('Olá! Gostaria de falar com um vendedor sobre produtos Apple.')"
+                                        class="inline-flex min-h-[40px] items-center gap-2.5 text-left hover:text-brand">
+                                    <svg class="flex-none text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path fill="currentColor" stroke="none" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+ [NÚMERO DA LOJA]
+                                </button>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="inline-flex min-h-[40px] items-center gap-2.5 hover:text-brand">
+                                    <svg class="flex-none text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg>
+ [@PERFIL]
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/contato" class="inline-flex min-h-[40px] items-center gap-2.5 break-all hover:text-brand">
+                                    <svg class="flex-none text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg>
+ [CONTATO@EXEMPLO]
+                                </a>
+                            </li>
+                            <li class="flex min-h-[40px] items-center gap-2.5 text-fog">
+                                <svg class="flex-none text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+ [DIAS E HORÁRIOS DE ATENDIMENTO]
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <p class="text-[13px] uppercase tracking-[.12em] text-fog">Navegar</p>
+                        <ul class="mt-3.5 grid grid-cols-2 gap-x-6 gap-y-1">
+                                                            <li><a href="/" class="inline-flex min-h-9 items-center hover:text-brand">Início</a></li>
+                                                            <li><a href="/catalogo" class="inline-flex min-h-9 items-center hover:text-brand">Catálogo</a></li>
+                                                            <li><a href="/sobre" class="inline-flex min-h-9 items-center hover:text-brand">Sobre nós</a></li>
+                                                            <li><a href="/contato" class="inline-flex min-h-9 items-center hover:text-brand">Contato</a></li>
+                                                                                        <li><a href="/catalogo--categoria-iphone" class="inline-flex min-h-9 items-center hover:text-brand">iPhone</a></li>
+                                                            <li><a href="/catalogo--categoria-macbook" class="inline-flex min-h-9 items-center hover:text-brand">MacBook</a></li>
+                                                            <li><a href="/catalogo--categoria-ipad" class="inline-flex min-h-9 items-center hover:text-brand">iPad</a></li>
+                                                            <li><a href="/catalogo--categoria-apple-watch" class="inline-flex min-h-9 items-center hover:text-brand">Apple Watch</a></li>
+                                                            <li><a href="/catalogo--categoria-airpods" class="inline-flex min-h-9 items-center hover:text-brand">AirPods</a></li>
+                                                            <li><a href="/catalogo--categoria-acessorios" class="inline-flex min-h-9 items-center hover:text-brand">Acessórios</a></li>
+                                                    </ul>
+                    </div>
+
+                    <div>
+                        <p class="text-[13px] uppercase tracking-[.12em] text-fog">Loja</p>
+                        <p class="mt-3.5 flex gap-2.5"><svg class="mt-0.5 flex-none text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+[ENDEREÇO, SE HOUVER LOJA FÍSICA]</p>
+                        <p class="mt-2 text-fog">CNPJ [00.000.000/0000-00]</p>
+                    </div>
+                </div>
+                <p class="mt-12 border-t border-ink-500 pt-6 text-[13px] leading-relaxed text-fog">
+                    Apple, iPhone, MacBook, iPad, Apple Watch e AirPods são marcas de seus respectivos proprietários. Protótipo: produtos, preços e estoque são demonstrativos.
+                </p>
+            </div>
+        </footer>
+
+        <button type="button" aria-label="Falar com um vendedor pelo WhatsApp"
+                @click="$store.whatsapp.abrir('Olá! Gostaria de falar com um vendedor sobre produtos Apple.')"
+                class="fixed right-3.5 z-[45] grid size-[54px] place-items-center rounded-full border-2 border-ink bg-brand text-ink transition hover:scale-105 hover:bg-brand-soft md:right-5 md:size-[62px] bottom-6">
+            <svg  width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path fill="currentColor" stroke="none" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+        </button>
+
+        <div x-show="$store.whatsapp.aberto" x-cloak class="fixed inset-0 z-[60] grid place-items-center p-4"
+     @keydown.escape.window="$store.whatsapp.fechar()">
+    <button type="button" aria-label="Fechar" class="absolute inset-0 bg-[rgba(5,9,6,.78)]" @click="$store.whatsapp.fechar()"></button>
+
+    <div role="dialog" aria-modal="true" aria-label="Prévia da conversa no WhatsApp"
+         class="relative grid max-h-[calc(100vh-32px)] w-full max-w-[880px] animate-rise overflow-auto rounded-card border border-ink-300 bg-ink text-snow md:grid-cols-[minmax(0,.9fr)_minmax(0,1.1fr)]">
+        <div class="flex flex-col gap-[18px] px-8 py-9">
+            <p class="eyebrow text-brand">Quase lá</p>
+            <h2 class="font-display text-[34px] font-bold leading-[1.02]">Você vai conversar com um vendedor.</h2>
+            <p class="text-fog">Ao abrir o WhatsApp, esta mensagem já vai preenchida. Basta enviar.</p>
+            <a :href="$store.whatsapp.link" target="_blank" rel="noopener" class="btn btn-lime mt-2 min-h-[56px]">
+                <svg  width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path fill="currentColor" stroke="none" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                Abrir WhatsApp
+            </a>
+            <button type="button" class="btn btn-ghost min-h-[48px]" @click="$store.whatsapp.fechar()">Voltar à loja</button>
+            <p class="text-xs leading-normal text-fog">
+                Abrir a conversa não cria pedido: o vendedor registra no painel.
+                                    Link de demonstração com número placeholder (00000000000). Configure LOJA_WHATSAPP no .env.
+                            </p>
+        </div>
+
+        <div class="flex flex-col border-t border-ink-500 bg-ink-800 md:min-h-[380px] md:border-l md:border-t-0">
+            <div class="flex items-center gap-3 border-b border-ink-500 bg-ink-700 px-5 py-3.5">
+                <span class="grid size-10 place-items-center rounded-full bg-brand font-display text-lg font-extrabold text-ink">G</span>
+                <div>
+                    <p class="font-semibold leading-tight">Gustavo · Vendas</p>
+                    <p class="text-xs text-fog">[NÚMERO DA LOJA]</p>
+                </div>
+            </div>
+            <div class="flex flex-1 flex-col justify-end px-5 py-6">
+                <p class="self-center rounded-full bg-ink-700 px-3 py-1 text-xs text-fog">Prévia da mensagem</p>
+            </div>
+            <div class="border-t border-ink-500 px-4 pb-[18px] pt-3.5">
+                <div class="animate-rise-late rounded-[14px_14px_4px_14px] border border-[#2B5A38] bg-[#1D3A25] px-4 py-3.5 text-[15px] leading-normal" x-text="$store.whatsapp.mensagem"></div>
+            </div>
+        </div>
+
+        <button type="button" aria-label="Fechar janela" @click="$store.whatsapp.fechar()"
+                class="absolute right-3 top-3 grid size-11 place-items-center rounded-full border border-ink-300 bg-ink-700">
+            <svg  width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+    </div>
+</div>
+    </body>
+</html>
